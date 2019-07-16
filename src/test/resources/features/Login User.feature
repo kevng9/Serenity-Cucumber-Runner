@@ -23,7 +23,7 @@ Scenario: Login user with valid username, empty password
   And he or she enters 'dsmith@demo.io' into the login Username field
   And he or she enters '' into the login Password field
   And he or she submits the login request
-  Then David verifies he or she is presented with a error message indicating invalid credentials or access denied
+  Then David verifies he or she is at the Home page
   
   ##Cucumber: Scenario Tags[p100021]##
 @RALLYLINK_https://rally1.rallydev.com/#/270352442800/detail/testcase/319110428520
