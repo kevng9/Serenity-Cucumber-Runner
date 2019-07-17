@@ -30,7 +30,7 @@ Scenario: Login user with valid username, empty password
 Scenario: Login user with valid username, valid password, remember me selected, account is enabled, account not expired, account not locked, credentials not expired
   Given Josh is a registered user
   When Josh navigates to the Login page
-  And he or she enters 'jsmith@demo.io' into the login Username field
+  And he or she enters 'dsmith@demo.io' into the login Username field
   And he or she enters 'Demo123!' into the login Password field
   And he or she clicks the Remember Me checkbox
   And he or she submits the login request
@@ -42,7 +42,7 @@ Scenario: Login user with valid username, valid password, remember me selected, 
 Scenario: Login user with valid username, valid password, remember me not selected, account is enabled, account not expired, account not locked, credentials not expired
   Given Josh is a registered user
   When Josh navigates to the Login page
-  And he or she enters 'jsmith@demo.io' into the login Username field
+  And he or she enters 'dsmith@demo.io' into the login Username field
   And he or she enters 'Demo123!' into the login Password field
   And he or she submits the login request
   Then David verifies he or she is at the Home page
