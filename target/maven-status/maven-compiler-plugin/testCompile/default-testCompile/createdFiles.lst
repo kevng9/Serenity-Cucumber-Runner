@@ -5,6 +5,7 @@ io/demo/testrunner/test/definition/ChangePasswordTests.class
 io/demo/testrunner/test/definition/CommonTests.class
 io/demo/testrunner/test/steps/ChangePasswordSteps.class
 io/demo/testrunner/test/steps/MenuNavigationSteps.class
+io/demo/testrunner/test/tdmdata/FindTDMData.class
 io/demo/testrunner/test/definition/SearchLocationsTests.class
 io/demo/testrunner/test/definition/LogoutUserTests.class
 io/demo/testrunner/test/pageobject/RegisterUserPage.class

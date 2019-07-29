@@ -12,6 +12,7 @@
 /Users/jeyba01/Documents/Badhree/SpringSuite/Serenity-Cucumber-Runner/src/test/java/io/demo/testrunner/test/pageobject/LoginPage.java
 /Users/jeyba01/Documents/Badhree/SpringSuite/Serenity-Cucumber-Runner/src/test/java/io/demo/testrunner/test/pageobject/RegisterUserPage.java
 /Users/jeyba01/Documents/Badhree/SpringSuite/Serenity-Cucumber-Runner/src/test/java/io/demo/testrunner/test/definition/RegisterUserTests.java
+/Users/jeyba01/Documents/Badhree/SpringSuite/Serenity-Cucumber-Runner/src/test/java/io/demo/testrunner/test/tdmdata/FindTDMData.java
 /Users/jeyba01/Documents/Badhree/SpringSuite/Serenity-Cucumber-Runner/src/test/java/io/demo/testrunner/test/definition/SearchLocationsTests.java
 /Users/jeyba01/Documents/Badhree/SpringSuite/Serenity-Cucumber-Runner/src/test/java/io/demo/testrunner/test/pageobject/HomePage.java
 /Users/jeyba01/Documents/Badhree/SpringSuite/Serenity-Cucumber-Runner/src/test/java/io/demo/testrunner/test/steps/RegisterUserSteps.java

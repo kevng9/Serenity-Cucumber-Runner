@@ -16,6 +16,8 @@ import com.google.gson.JsonObject;
 import com.rallydev.rest.RallyRestApi;
 import com.rallydev.rest.request.CreateRequest;
 import com.rallydev.rest.response.CreateResponse;
+
+import io.demo.testrunner.test.tdmdata.FindTDMData;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.model.DataTable;
 import net.thucydides.core.model.Story;
@@ -27,6 +29,7 @@ import net.thucydides.core.steps.StepListener;
 
 public class RallyUpdater implements StepListener {
 
+	
 	
 	@Step
 	@Override
@@ -86,7 +89,16 @@ public class RallyUpdater implements StepListener {
 	@Override
 	public void testSuiteStarted(Class<?> storyClass) {
 		// TODO Auto-generated method stub
-
+		/*
+		FindTDMData td = new FindTDMData();
+		String basicToken = "YWRtaW5pc3RyYXRvcjptYXJtaXRl";
+		String protocolType = "http";
+		String hostName = "ec2-18-223-156-5.us-east-2.compute.amazonaws.com";
+		String port = "8080";
+		String projectId = "2725";
+		String versionId = "2726";
+		tdmToken = td.getBearerToken(basicToken, protocolType, hostName, port, projectId, versionId);
+		*/
 	}
 
 	@Override

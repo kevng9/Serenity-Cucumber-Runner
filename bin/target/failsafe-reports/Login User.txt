@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: Login User
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 30.998 s <<< FAILURE! - in Login User
+Login user with valid username, invalid password(Login User)  Time elapsed: 16.178 s  <<< FAILURE!
+java.lang.AssertionError
+
+Login user with valid username, empty password(Login User)  Time elapsed: 14.816 s  <<< FAILURE!
+java.lang.AssertionError
+

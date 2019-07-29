@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="Login User" skipped="0" tests="2" time="28.05" timestamp="2019-07-05 07:36:56"><testcase name="Login user with valid username, invalid password"><failure type="java.lang.AssertionError"/><system-err>null
+io.demo.testrunner.test.steps.LoginSteps.redirectedToHomePage(LoginSteps.java:52)
+io.demo.testrunner.test.definition.LoginUserTests.redirectToHomePage(LoginUserTests.java:78)
+✽.David verifies he or she is at the Home page(features/Login User.feature:16)
+</system-err></testcase><testcase name="Login user with valid username, empty password"><failure type="java.lang.AssertionError"/><system-err>null
+io.demo.testrunner.test.steps.LoginSteps.redirectedToHomePage(LoginSteps.java:52)
+io.demo.testrunner.test.definition.LoginUserTests.redirectToHomePage(LoginUserTests.java:78)
+✽.David verifies he or she is at the Home page(features/Login User.feature:26)
+</system-err></testcase></testsuite>

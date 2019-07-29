@@ -50,7 +50,6 @@ public class LoginSteps extends ScenarioSteps{
 	@Step ("Authenticated User is expected to redirect the browser to the Home page")
 	public void redirectedToHomePage() {
 		assertTrue (homePage.atHomePage());
-		//System.out.println(updateRally.updateVerdict("***THIS IS A TEST****"));
 	}
 	
 	@Step ("Assert the User is presented an Error Message for Failed Authentication")

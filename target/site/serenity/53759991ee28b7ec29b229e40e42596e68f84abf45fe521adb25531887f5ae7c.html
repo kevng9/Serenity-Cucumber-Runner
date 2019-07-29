@@ -170,7 +170,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-07-2019 19:36</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 29-07-2019 11:21</span>
     <br style="clear:left"/>
 </div>
 
@@ -195,8 +195,8 @@
                                                     <span class="badge tag-badge" style="background:default;">
                                                         <i class="fa fa-tag"></i>&nbsp;<a class="tagLink"
                                                                                           style="background:default;"
-                                                                                          href="c3f303def2ac299e8f7bfed8d7e7d52f5b869e5345af891c7e612bf76fb00038.html">/Rally1.Rallydev.Com/#/270352442800/Detail/Testcase/319110427852
-                                                        (RALLYLINK_https)</a>
+                                                                                          href="6e39c849a6e37031ea037fe6cc2fe690d2e7d8051d7e95986e6f3b42e9ff4a05.html">Negative
+                                                        (tag)</a>
                                                     </span>
                                                 </p>
                                         </span>
@@ -245,16 +245,16 @@ so I can manage my accounts
 
 
                                                             </td>
-                                                            <td style="width:1%;"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i>
+                                                            <td style="width:1%;"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
                                                                
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td style="width:99%;" class="toc-title"><a href="#7c3de7af23431e044d19bbaf9ca739167cb5213560cf5219914bc8a84fa99c00">Login user with valid username, empty password</a>
+                                                            <td style="width:99%;" class="toc-title"><a href="#65cd773c1e80ca30277748086dce3cf912a0bb07011e7c350fcf12c106895535">Login user with valid username, valid password, account is disabled</a>
 
 
                                                             </td>
-                                                            <td style="width:1%;"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i>
+                                                            <td style="width:1%;"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
                                                                
                                                             </td>
                                                         </tr>
@@ -266,7 +266,7 @@ so I can manage my accounts
 
 
                                                 <div class="scenario-docs card" id="ebfcac75ee5ec3fc946d2ff2daf9bc578504c1eccb704ae783b2b140bb6c690d">
-                                                    <div class="scenario-docs card-header failure" style="min-height:1.5em;">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
                                                         <div>
                                                             <span class="scenario-heading">
                                                                 Login user with valid username, invalid password
@@ -274,7 +274,7 @@ so I can manage my accounts
                                                             <span class="scenario-result-icon">
                                                                 
 
-                                                                    <i class='fa fa-times-circle failure-icon ' title='FAILURE'></i>
+                                                                    <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
                                                             </span>
                                                         </div>
                                                         <div class="scenario-report-badges">
@@ -287,7 +287,7 @@ so I can manage my accounts
                                                             <p>And he or she enters 'dsmith@demo.io' into the login Username field</p>
                                                             <p>And he or she enters 'sSXALkUSA97359' into the login Password field</p>
                                                             <p>And he or she submits the login request</p>
-                                                            <p>Then David verifies he or she is at the Home page</p>
+                                                            <p>Then David verifies he or she is presented with a error message indicating invalid credentials or access denied</p>
                                                         <div class="examples">
                                                         </div>
 
@@ -295,29 +295,30 @@ so I can manage my accounts
                                                 </div>
 
 
-                                                <div class="scenario-docs card" id="7c3de7af23431e044d19bbaf9ca739167cb5213560cf5219914bc8a84fa99c00">
-                                                    <div class="scenario-docs card-header failure" style="min-height:1.5em;">
+                                                <div class="scenario-docs card" id="65cd773c1e80ca30277748086dce3cf912a0bb07011e7c350fcf12c106895535">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
                                                         <div>
                                                             <span class="scenario-heading">
-                                                                Login user with valid username, empty password
+                                                                Login user with valid username, valid password, account is disabled
                                                             </span>
                                                             <span class="scenario-result-icon">
                                                                 
 
-                                                                    <i class='fa fa-times-circle failure-icon ' title='FAILURE'></i>
+                                                                    <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
                                                             </span>
                                                         </div>
                                                         <div class="scenario-report-badges">
-                                                                <span class="scenario-report-badge" style="float:right;"><a href='154a782358ecc7953e331795804a58d0d569122eda344ca2719e80aec3b6b9e6.html' class='badge more-details'>Test Results</a></span>
+                                                                <span class="scenario-report-badge" style="float:right;"><a href='552031250a9daf5faeb1d6e97cb8edfd178c6a9a85a49c9b4ec56023316797ba.html' class='badge more-details'>Test Results</a></span>
                                                         </div>
                                                     </div>
                                                     <div class="scenario-docs card-body">
-                                                            <p>Given David is a registered user</p>
-                                                            <p>When David navigates to the Login page</p>
-                                                            <p>And he or she enters 'dsmith@demo.io' into the login Username field</p>
-                                                            <p>And he or she enters '' into the login Password field</p>
+                                                            <p>Given Emmit is a registered user</p>
+                                                            <p>And he or she has a disabled account</p>
+                                                            <p>When Emmit navigates to the Login page</p>
+                                                            <p>And he or she enters 'dddisabled@demo.io' into the login Username field</p>
+                                                            <p>And he or she enters 'Demo123!' into the login Password field</p>
                                                             <p>And he or she submits the login request</p>
-                                                            <p>Then David verifies he or she is at the Home page</p>
+                                                            <p>Then Emmit verifies he or she is presented with a error message indicating invalid credentials or access denied</p>
                                                         <div class="examples">
                                                         </div>
 
@@ -338,10 +339,10 @@ so I can manage my accounts
                                             </div>
                                             <script>
 
-                                                var labels = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '100%', ' ', ' ', ' ', ' ', ' '];
+                                                var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
                                                 // Our series array that contains series objects or in this case series data arrays
 
-                                                var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 2}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                var series = [{meta: 'Passing tests (automated)', value: 2}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                 // as you saw in the previous example
@@ -378,11 +379,12 @@ so I can manage my accounts
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                                    <td class="aggregate-result-count"><i
-                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
+                                                                    <td class="aggregate-result-count">
+                                                                        <a href="fc1f4076d47d5e57c1da3aaad10ceee35f654d412c478488f8bf70143ee2e2f0.html"><i
+                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
                                                                     </td>
-                                                <td class="automated-stats">0</td>
-                                                <td class="automated-stats"> </td>
+                                                <td class="automated-stats">2</td>
+                                                <td class="automated-stats">100%</td>
                                             </tr>
                                             <tr>
                                                                     <td class="aggregate-result-count"><i
@@ -412,12 +414,12 @@ so I can manage my accounts
                                             </tr>
 
                                             <tr>
-                                                                    <td class="aggregate-result-count indented-error-category">
-                                                                        <a href="fa52142a9d5d1128e76caf20bb23c7966a2d363de9b29d94af0192c7008a5070.html"><i
-                                                                                class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
-                                                                    </td>
-                                                <td class="automated-stats">2</td>
-                                                <td class="automated-stats">100%</td>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
+                                                                </td>
+                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats"> </td>
                                             <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -457,11 +459,11 @@ so I can manage my accounts
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td>28s</td>
-                                                        <td>16s</td>
-                                                        <td>13s</td>
-                                                        <td>14s</td>
-                                                        <td>14s</td>
+                                                        <td>18s</td>
+                                                        <td>11s</td>
+                                                        <td>8s</td>
+                                                        <td>9s</td>
+                                                        <td>9s</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -484,28 +486,28 @@ so I can manage my accounts
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                <tr class="scenario-result FAILURE">
+                                                <tr class="scenario-result SUCCESS">
                                                     <td>
                                                             <a href="9f61ca6c601a6a0b8385f2f301f8ea0f7d8a9a56f2a169b5dc0c4a071ebf70d0.html">Login user with valid username, invalid password</a>
                                                     </td>
                                                     <td>6</td>
-                                                    <td>19:36:56</td>
-                                                    <td>00:14</td>
+                                                    <td>11:21:31</td>
+                                                    <td>00:09</td>
                                                     <td>
-                                                            <i class='fa fa-times-circle failure-icon ' title='FAILURE'></i> <span
-                                                                style="display:none">FAILURE</span>
+                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                                style="display:none">SUCCESS</span>
                                                     </td>
                                                 </tr>
-                                                <tr class="scenario-result FAILURE">
+                                                <tr class="scenario-result SUCCESS">
                                                     <td>
-                                                            <a href="154a782358ecc7953e331795804a58d0d569122eda344ca2719e80aec3b6b9e6.html">Login user with valid username, empty password</a>
+                                                            <a href="552031250a9daf5faeb1d6e97cb8edfd178c6a9a85a49c9b4ec56023316797ba.html">Login user with valid username, valid password, account is disabled</a>
                                                     </td>
-                                                    <td>6</td>
-                                                    <td>19:37:12</td>
-                                                    <td>00:13</td>
+                                                    <td>7</td>
+                                                    <td>11:21:43</td>
+                                                    <td>00:08</td>
                                                     <td>
-                                                            <i class='fa fa-times-circle failure-icon ' title='FAILURE'></i> <span
-                                                                style="display:none">FAILURE</span>
+                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                                style="display:none">SUCCESS</span>
                                                     </td>
                                                 </tr>
                                                 </tbody>

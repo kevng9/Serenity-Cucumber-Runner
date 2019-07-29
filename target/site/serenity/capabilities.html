@@ -104,7 +104,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Login User","type":"feature","href":"53759991ee28b7ec29b229e40e42596e68f84abf45fe521adb25531887f5ae7c.html","nodes":[],"selectable":false,"tags":["\u003ci class\u003d\u0027fa fa-times-circle failure-icon \u0027 title\u003d\u0027FAILURE\u0027\u003e\u003c/i\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e2 scenarios\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Login User","type":"feature","href":"53759991ee28b7ec29b229e40e42596e68f84abf45fe521adb25531887f5ae7c.html","nodes":[],"selectable":false,"tags":["\u003ci class\u003d\u0027fa fa-check-circle-o success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e2 scenarios\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -168,7 +168,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-07-2019 19:36</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 29-07-2019 11:21</span>
     <br style="clear:left"/>
 </div>
 
@@ -210,16 +210,16 @@
 
 
                                                             </td>
-                                                            <td style="width:1%;"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i>
+                                                            <td style="width:1%;"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
                                                                
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td style="width:99%;" class="toc-title"><a href="#7c3de7af23431e044d19bbaf9ca739167cb5213560cf5219914bc8a84fa99c00">Login user with valid username, empty password</a>
+                                                            <td style="width:99%;" class="toc-title"><a href="#65cd773c1e80ca30277748086dce3cf912a0bb07011e7c350fcf12c106895535">Login user with valid username, valid password, account is disabled</a>
 
 
                                                             </td>
-                                                            <td style="width:1%;"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i>
+                                                            <td style="width:1%;"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
                                                                
                                                             </td>
                                                         </tr>
@@ -231,7 +231,7 @@
 
 
                                                 <div class="scenario-docs card" id="ebfcac75ee5ec3fc946d2ff2daf9bc578504c1eccb704ae783b2b140bb6c690d">
-                                                    <div class="scenario-docs card-header failure" style="min-height:1.5em;">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
                                                         <div>
                                                             <span class="scenario-heading">
                                                                 Login user with valid username, invalid password
@@ -239,7 +239,7 @@
                                                             <span class="scenario-result-icon">
                                                                 
 
-                                                                    <i class='fa fa-times-circle failure-icon ' title='FAILURE'></i>
+                                                                    <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
                                                             </span>
                                                         </div>
                                                         <div class="scenario-report-badges">
@@ -252,7 +252,7 @@
                                                             <p>And he or she enters 'dsmith@demo.io' into the login Username field</p>
                                                             <p>And he or she enters 'sSXALkUSA97359' into the login Password field</p>
                                                             <p>And he or she submits the login request</p>
-                                                            <p>Then David verifies he or she is at the Home page</p>
+                                                            <p>Then David verifies he or she is presented with a error message indicating invalid credentials or access denied</p>
                                                         <div class="examples">
                                                         </div>
 
@@ -260,29 +260,30 @@
                                                 </div>
 
 
-                                                <div class="scenario-docs card" id="7c3de7af23431e044d19bbaf9ca739167cb5213560cf5219914bc8a84fa99c00">
-                                                    <div class="scenario-docs card-header failure" style="min-height:1.5em;">
+                                                <div class="scenario-docs card" id="65cd773c1e80ca30277748086dce3cf912a0bb07011e7c350fcf12c106895535">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
                                                         <div>
                                                             <span class="scenario-heading">
-                                                                Login user with valid username, empty password
+                                                                Login user with valid username, valid password, account is disabled
                                                             </span>
                                                             <span class="scenario-result-icon">
                                                                 
 
-                                                                    <i class='fa fa-times-circle failure-icon ' title='FAILURE'></i>
+                                                                    <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
                                                             </span>
                                                         </div>
                                                         <div class="scenario-report-badges">
-                                                                <span class="scenario-report-badge" style="float:right;"><a href='154a782358ecc7953e331795804a58d0d569122eda344ca2719e80aec3b6b9e6.html' class='badge more-details'>Test Results</a></span>
+                                                                <span class="scenario-report-badge" style="float:right;"><a href='552031250a9daf5faeb1d6e97cb8edfd178c6a9a85a49c9b4ec56023316797ba.html' class='badge more-details'>Test Results</a></span>
                                                         </div>
                                                     </div>
                                                     <div class="scenario-docs card-body">
-                                                            <p>Given David is a registered user</p>
-                                                            <p>When David navigates to the Login page</p>
-                                                            <p>And he or she enters 'dsmith@demo.io' into the login Username field</p>
-                                                            <p>And he or she enters '' into the login Password field</p>
+                                                            <p>Given Emmit is a registered user</p>
+                                                            <p>And he or she has a disabled account</p>
+                                                            <p>When Emmit navigates to the Login page</p>
+                                                            <p>And he or she enters 'dddisabled@demo.io' into the login Username field</p>
+                                                            <p>And he or she enters 'Demo123!' into the login Password field</p>
                                                             <p>And he or she submits the login request</p>
-                                                            <p>Then David verifies he or she is at the Home page</p>
+                                                            <p>Then Emmit verifies he or she is presented with a error message indicating invalid credentials or access denied</p>
                                                         <div class="examples">
                                                         </div>
 
@@ -303,10 +304,10 @@
                                             </div>
                                             <script>
 
-                                                var labels = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '100%', ' ', ' ', ' ', ' ', ' '];
+                                                var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
                                                 // Our series array that contains series objects or in this case series data arrays
 
-                                                var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 2}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                var series = [{meta: 'Passing tests (automated)', value: 2}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                 // as you saw in the previous example
@@ -343,11 +344,12 @@
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                                    <td class="aggregate-result-count"><i
-                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
+                                                                    <td class="aggregate-result-count">
+                                                                        <a href="01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.html"><i
+                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
                                                                     </td>
-                                                <td class="automated-stats">0</td>
-                                                <td class="automated-stats"> </td>
+                                                <td class="automated-stats">2</td>
+                                                <td class="automated-stats">100%</td>
                                             </tr>
                                             <tr>
                                                                     <td class="aggregate-result-count"><i
@@ -377,12 +379,12 @@
                                             </tr>
 
                                             <tr>
-                                                                    <td class="aggregate-result-count indented-error-category">
-                                                                        <a href="da5b0c51b332adf0ef993a9f086d6a1b51a3d800248ec6ae281212092f35bd37.html"><i
-                                                                                class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
-                                                                    </td>
-                                                <td class="automated-stats">2</td>
-                                                <td class="automated-stats">100%</td>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
+                                                                </td>
+                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats"> </td>
                                             <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -422,11 +424,11 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td>28s</td>
-                                                        <td>16s</td>
-                                                        <td>13s</td>
-                                                        <td>14s</td>
-                                                        <td>14s</td>
+                                                        <td>18s</td>
+                                                        <td>11s</td>
+                                                        <td>8s</td>
+                                                        <td>9s</td>
+                                                        <td>9s</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -468,8 +470,8 @@
             <td>2</td>
             <td>0</td>
             <td>
-                <span class="status_icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
-                <span style="display:none">3</span>
+                <span class="status_icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
+                <span style="display:none">1</span>
             </td>
 
             <td width="165px" style="padding:0px;">
@@ -478,18 +480,18 @@
 <table>
     <tr>
         <td width="40px" style="padding-top:4px;">
-            <div class="small" style="text-align:right;">0%</div>
+            <div class="small" style="text-align:right;">100%</div>
         </td>
         <td style="min-width:12.5em;">
             <div class="progress">
                 <div class="progress-bar" role="progressbar"
-                     style="width: 0%; background-color:#30cb23;"
-                     aria-valuenow="0"
+                     style="width: 100%; background-color:#30cb23;"
+                     aria-valuenow="2"
                      aria-valuemin="0"
                      aria-valuemax="2"
                      title="  - Total tests: 2
-  - Passing tests: 0 (0%)
-  - Failing tests: 2 (100%)
+  - Passing tests: 2 (100%)
+  - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
@@ -501,8 +503,8 @@
                      aria-valuemin="0"
                      aria-valuemax="2"
                      title="  - Total tests: 2
-  - Passing tests: 0 (0%)
-  - Failing tests: 2 (100%)
+  - Passing tests: 2 (100%)
+  - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
@@ -514,8 +516,8 @@
                      aria-valuemin="0"
                      aria-valuemax="2"
                      title="  - Total tests: 2
-  - Passing tests: 0 (0%)
-  - Failing tests: 2 (100%)
+  - Passing tests: 2 (100%)
+  - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
@@ -527,21 +529,21 @@
                      aria-valuemin="0"
                      aria-valuemax="2"
                      title="  - Total tests: 2
-  - Passing tests: 0 (0%)
-  - Failing tests: 2 (100%)
+  - Passing tests: 2 (100%)
+  - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
                 </div>
                 <div class="progress-bar" role="progressbar"
-                     style="width: 100%; background-color:#f8001f;"
-                     aria-valuenow="2"
+                     style="width: 0%; background-color:#f8001f;"
+                     aria-valuenow="0"
                      aria-valuemin="0"
                      aria-valuemax="2"
                      title="  - Total tests: 2
-  - Passing tests: 0 (0%)
-  - Failing tests: 2 (100%)
+  - Passing tests: 2 (100%)
+  - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
@@ -553,8 +555,8 @@
                      aria-valuemin="0"
                      aria-valuemax="2"
                      title="  - Total tests: 2
-  - Passing tests: 0 (0%)
-  - Failing tests: 2 (100%)
+  - Passing tests: 2 (100%)
+  - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
@@ -566,8 +568,8 @@
                      aria-valuemin="0"
                      aria-valuemax="2"
                      title="  - Total tests: 2
-  - Passing tests: 0 (0%)
-  - Failing tests: 2 (100%)
+  - Passing tests: 2 (100%)
+  - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
@@ -603,28 +605,28 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                <tr class="scenario-result FAILURE">
+                                                <tr class="scenario-result SUCCESS">
                                                     <td>
                                                             <a href="9f61ca6c601a6a0b8385f2f301f8ea0f7d8a9a56f2a169b5dc0c4a071ebf70d0.html">Login user with valid username, invalid password</a>
                                                     </td>
                                                     <td>6</td>
-                                                    <td>19:36:56</td>
-                                                    <td>00:14</td>
+                                                    <td>11:21:31</td>
+                                                    <td>00:09</td>
                                                     <td>
-                                                            <i class='fa fa-times-circle failure-icon ' title='FAILURE'></i> <span
-                                                                style="display:none">FAILURE</span>
+                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                                style="display:none">SUCCESS</span>
                                                     </td>
                                                 </tr>
-                                                <tr class="scenario-result FAILURE">
+                                                <tr class="scenario-result SUCCESS">
                                                     <td>
-                                                            <a href="154a782358ecc7953e331795804a58d0d569122eda344ca2719e80aec3b6b9e6.html">Login user with valid username, empty password</a>
+                                                            <a href="552031250a9daf5faeb1d6e97cb8edfd178c6a9a85a49c9b4ec56023316797ba.html">Login user with valid username, valid password, account is disabled</a>
                                                     </td>
-                                                    <td>6</td>
-                                                    <td>19:37:12</td>
-                                                    <td>00:13</td>
+                                                    <td>7</td>
+                                                    <td>11:21:43</td>
+                                                    <td>00:08</td>
                                                     <td>
-                                                            <i class='fa fa-times-circle failure-icon ' title='FAILURE'></i> <span
-                                                                style="display:none">FAILURE</span>
+                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                                style="display:none">SUCCESS</span>
                                                     </td>
                                                 </tr>
                                                 </tbody>

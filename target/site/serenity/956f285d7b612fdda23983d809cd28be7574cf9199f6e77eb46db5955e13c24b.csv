@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Login User","Login user with valid username, invalid password","FAILURE","2019-07-05T19:36:56.565-04:00[America/Toronto]","0.0","14.66"
+"Login User","Login user with valid username, invalid password","SUCCESS","2019-07-29T11:21:31.467-04:00[America/Toronto]","0.0","9.37"
