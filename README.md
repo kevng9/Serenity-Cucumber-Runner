@@ -7,6 +7,7 @@ The .feature files must be generated from CA Agile Requirements Designer and mus
 
 The code fetches test data from CA Test Data Manager's Find and Reserve Models, at runtime, as per Test Data needs specified in the Test Definition.
 Follows "use-get-from-where" pattern to fetch data from CA TDM.
+
 use - is the Test Data Environment.
 get - is the item to get from tdm model.
 from - is the Name of the Test Data Model.
