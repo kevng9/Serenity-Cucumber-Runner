@@ -1,0 +1,2 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login User","Login user with valid username, valid password, remember me selected, account is enabled, account not expired, account not locked, credentials not expired","SUCCESS","2019-08-02T16:22:10.623-04:00[America/Toronto]","0.0","10.08"

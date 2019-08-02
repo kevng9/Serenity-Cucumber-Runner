@@ -89,21 +89,14 @@ public class RallyUpdater implements StepListener {
 	@Override
 	public void testSuiteStarted(Class<?> storyClass) {
 		// TODO Auto-generated method stub
-		/*
-		FindTDMData td = new FindTDMData();
-		String basicToken = "YWRtaW5pc3RyYXRvcjptYXJtaXRl";
-		String protocolType = "http";
-		String hostName = "ec2-18-223-156-5.us-east-2.compute.amazonaws.com";
-		String port = "8080";
-		String projectId = "2725";
-		String versionId = "2726";
-		tdmToken = td.getBearerToken(basicToken, protocolType, hostName, port, projectId, versionId);
-		*/
+		
 	}
 
 	@Override
 	public void testSuiteStarted(Story story) {
 		// TODO Auto-generated method stub
+		
+		
 
 	}
 

@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Serinity Cucumber Test Runner</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="53759991ee28b7ec29b229e40e42596e68f84abf45fe521adb25531887f5ae7c.html">Login User</a></span>
+                > <span class="truncate-60"><a
+                    href="154a782358ecc7953e331795804a58d0d569122eda344ca2719e80aec3b6b9e6.html">Login user with valid username, empty password </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-08-2019 16:21</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Login User </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a registered user<br />
+I want to authenticate into the application<br />
+so I can manage my accounts
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="c3f303def2ac299e8f7bfed8d7e7d52f5b869e5345af891c7e612bf76fb00038.html">/Rally1.Rallydev.Com/#/270352442800/Detail/Testcase/319110427852
+                                    (RALLYLINK_https)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Login user with valid username, empty password
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="f6d9286b70afc63b7869204278e5c4e2a037205f9673eb5a813fa24a4a8395fc.png" title=" When David navigates to the Login page" width="2560"/>
+                <img src="f6d9286b70afc63b7869204278e5c4e2a037205f9673eb5a813fa24a4a8395fc.png" title=" Open Browser and Navigate to Login Page" width="2560"/>
+                <img src="f6d9286b70afc63b7869204278e5c4e2a037205f9673eb5a813fa24a4a8395fc.png" title=" When David navigates to the Login page (completed)" width="2560"/>
+                <img src="62f81648cb78c4b0364af691dfedbfef2413d9b9e4b9d7df5a2f8a612fd21345.png" title=" And he or she enters 'enabled:EQUALS:1:AND:account_non_expired:EQUALS:1:AND:account_non_locked:EQUALS:1:AND:credentials_non_expired:EQUALS:1:AND:rolename:EQUALS:ROLE_USER' into the login Username field" width="2560"/>
+                <img src="62f81648cb78c4b0364af691dfedbfef2413d9b9e4b9d7df5a2f8a612fd21345.png" title=" Enter Username 'nsmith@demo.io' into the Username field" width="2560"/>
+                <img src="62f81648cb78c4b0364af691dfedbfef2413d9b9e4b9d7df5a2f8a612fd21345.png" title=" And he or she enters 'enabled:EQUALS:1:AND:account_non_expired:EQUALS:1:AND:account_non_locked:EQUALS:1:AND:credentials_non_expired:EQUALS:1:AND:rolename:EQUALS:ROLE_USER' into the login Username field (completed)" width="2560"/>
+                <img src="8ace731e774834dad429a4c9ffa9abc2970f7a4714df7c8ed6b57bf8f6bc7f7a.png" title=" And he or she enters '' into the login Password field" width="2560"/>
+                <img src="8ace731e774834dad429a4c9ffa9abc2970f7a4714df7c8ed6b57bf8f6bc7f7a.png" title=" Enter Password '' into the Password field" width="2560"/>
+                <img src="8ace731e774834dad429a4c9ffa9abc2970f7a4714df7c8ed6b57bf8f6bc7f7a.png" title=" And he or she enters '' into the login Password field (completed)" width="2560"/>
+                <img src="5e8e25e46e1b6a1625a90efa8c814bc0ab722125e1a73c21008029c860df3830.png" title=" And he or she submits the login request" width="2560"/>
+                <img src="5e8e25e46e1b6a1625a90efa8c814bc0ab722125e1a73c21008029c860df3830.png" title=" Click the Submit button" width="2560"/>
+                <img src="5e8e25e46e1b6a1625a90efa8c814bc0ab722125e1a73c21008029c860df3830.png" title=" And he or she submits the login request (completed)" width="2560"/>
+                <img src="5e8e25e46e1b6a1625a90efa8c814bc0ab722125e1a73c21008029c860df3830.png" title=" Then David verifies he or she is presented with a error message indicating invalid credentials or access denied" width="2560"/>
+                <img src="5e8e25e46e1b6a1625a90efa8c814bc0ab722125e1a73c21008029c860df3830.png" title=" Assert the User is presented an Error Message for Failed Authentication" width="2560"/>
+                <img src="5e8e25e46e1b6a1625a90efa8c814bc0ab722125e1a73c21008029c860df3830.png" title=" Then David verifies he or she is presented with a error message indicating invalid credentials or access denied (completed): <span class='success-color'>SUCCESS</span>" width="2560"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.30</span>
+</div>
+</body>
+</html>

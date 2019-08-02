@@ -6,7 +6,17 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.demo.testrunner.test.steps.LoginSteps;
 import io.demo.testrunner.test.tdmdata.FindTDMData;
+import net.serenitybdd.cucumber.suiteslicing.TestScenarioResult;
 import net.thucydides.core.annotations.Steps;
+import net.thucydides.core.model.TestTag;
+import net.thucydides.core.steps.StepEventBus;
+
+import java.io.InputStream;
+import java.lang.reflect.Method;
+import java.util.Properties;
+import java.util.Set;
+
+import org.springframework.core.io.ClassPathResource;
 
 
 public class LoginUserTests {
@@ -19,30 +29,19 @@ public class LoginUserTests {
 	private String get = "username";;
 	private String from = "Login";
 	private String where ;
+	ClassPathResource resource = new ClassPathResource("application.properties");
+	Properties p = new Properties();
+	InputStream inputStream = null;
 	
 	/** Given **/
 	@Given("^(.*) is a registered user$")
 	public void registeredUser (String persona) {
-		
-		where = "enabled EQUALS 1 AND account_non_expired EQUALS 1 AND account_non_locked EQUALS 1 AND credentials_non_expired EQUALS 1 AND rolename EQUALS ROLE_USER";
-		try {
-			user = tdmData.fetchTestData(use, get, from, where);
-		} catch (Exception e) {
-			
-			e.printStackTrace();
-		}
+	
 	}
 	
 	@And("^he or she has an expired account$")
 	public void expiredAccount (){
-		
-		where = "account_non_expired EQUALS 0";
-		try {
-			user = tdmData.fetchTestData(use, get, from, where);
-		} catch (Exception e) {
-			
-			e.printStackTrace();
-		}
+	
 	}
 	
 	@And("^he or she has an account with expired credentials$")
@@ -53,26 +52,12 @@ public class LoginUserTests {
 	@And("^he or she has a locked account$")
 	public void lockedAccount (){
 		
-		where = "account_non_locked EQUALS 0";
-		try {
-			user = tdmData.fetchTestData(use, get, from, where);
-		} catch (Exception e) {
-			
-			e.printStackTrace();
-		}
+
 	}
 	
 	@And("^he or she has a disabled account$")
 	public void disabledAccount (){
-		
-		where = "enabled EQUALS 0";
-		try {
-			user = tdmData.fetchTestData(use, get, from, where);
-		} catch (Exception e) {
-			
-			e.printStackTrace();
-		}
-
+	
 	}
 	
 	/** When **/
@@ -83,7 +68,15 @@ public class LoginUserTests {
 
 	@When("^he or she enters '(.*)' into the login Username field$")
 	public void enterUserName (String username) {
-		login.enterUsername (user);
+		
+		
+		try {
+		login.enterUsername (tdmData.fetchTestData(use, get, from, username.replaceAll(":", " ")));
+		
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
 	}
 	
 	@And("^he or she enters '(.*)' into the login Password field$")
