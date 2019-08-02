@@ -71,7 +71,7 @@ public class LoginUserTests {
 		
 		
 		try {
-		login.enterUsername (tdmData.fetchTestData(use, get, from, username.replaceAll(":", " ")));
+		login.enterUsername (tdmData.fetchTestData(use, get, from, username));
 		
 		} catch (Exception e) {
 			

@@ -10,7 +10,7 @@ Feature: Login User
 Scenario: Login user with valid username, invalid password
   Given David is a registered user
   When David navigates to the Login page
-  And he or she enters 'enabled:EQUALS:1:AND:account_non_expired:EQUALS:1:AND:account_non_locked:EQUALS:1:AND:credentials_non_expired:EQUALS:1:AND:rolename:EQUALS:ROLE_USER' into the login Username field
+  And he or she enters 'enabled EQUALS 1 AND account_non_expired EQUALS 1 AND account_non_locked EQUALS 1 AND credentials_non_expired EQUALS 1 AND rolename EQUALS ROLE_USER' into the login Username field
   And he or she enters 'sSXALkUSA97359' into the login Password field
   And he or she submits the login request
   Then David verifies he or she is presented with a error message indicating invalid credentials or access denied
@@ -20,7 +20,7 @@ Scenario: Login user with valid username, invalid password
 Scenario: Login user with valid username, empty password
   Given David is a registered user
   When David navigates to the Login page
-  And he or she enters 'enabled:EQUALS:1:AND:account_non_expired:EQUALS:1:AND:account_non_locked:EQUALS:1:AND:credentials_non_expired:EQUALS:1:AND:rolename:EQUALS:ROLE_USER' into the login Username field
+  And he or she enters 'enabled EQUALS 1 AND account_non_expired EQUALS 1 AND account_non_locked EQUALS 1 AND credentials_non_expired EQUALS 1 AND rolename EQUALS ROLE_USER' into the login Username field
   And he or she enters '' into the login Password field
   And he or she submits the login request
   Then David verifies he or she is presented with a error message indicating invalid credentials or access denied
@@ -30,7 +30,7 @@ Scenario: Login user with valid username, empty password
 Scenario: Login user with valid username, valid password, remember me selected, account is enabled, account not expired, account not locked, credentials not expired
   Given Josh is a registered user
   When Josh navigates to the Login page
-  And he or she enters 'enabled:EQUALS:1:AND:account_non_expired:EQUALS:1:AND:account_non_locked:EQUALS:1:AND:credentials_non_expired:EQUALS:1:AND:rolename:EQUALS:ROLE_USER' into the login Username field
+  And he or she enters 'enabled EQUALS 1 AND account_non_expired EQUALS 1 AND account_non_locked EQUALS 1 AND credentials_non_expired EQUALS 1 AND rolename EQUALS ROLE_USER' into the login Username field
   And he or she enters 'Demo123!' into the login Password field
   And he or she clicks the Remember Me checkbox
   And he or she submits the login request
@@ -42,7 +42,7 @@ Scenario: Login user with valid username, valid password, remember me selected, 
 Scenario: Login user with valid username, valid password, remember me not selected, account is enabled, account not expired, account not locked, credentials not expired
   Given Josh is a registered user
   When Josh navigates to the Login page
-  And he or she enters 'enabled:EQUALS:1:AND:account_non_expired:EQUALS:1:AND:account_non_locked:EQUALS:1:AND:credentials_non_expired:EQUALS:1:AND:rolename:EQUALS:ROLE_USER' into the login Username field
+  And he or she enters 'enabled EQUALS 1 AND account_non_expired EQUALS 1 AND account_non_locked EQUALS 1 AND credentials_non_expired EQUALS 1 AND rolename EQUALS ROLE_USER' into the login Username field
   And he or she enters 'Demo123!' into the login Password field
   And he or she submits the login request
   Then David verifies he or she is at the Home page
@@ -53,7 +53,7 @@ Scenario: Login user with valid username, valid password, account is disabled
   Given Emmit is a registered user
   And he or she has a disabled account
   When Emmit navigates to the Login page
-  And he or she enters 'enabled:EQUALS:0' into the login Username field
+  And he or she enters 'enabled EQUALS 0' into the login Username field
   And he or she enters 'Demo123!' into the login Password field
   And he or she submits the login request
   Then Emmit verifies he or she is presented with a error message indicating invalid credentials or access denied
