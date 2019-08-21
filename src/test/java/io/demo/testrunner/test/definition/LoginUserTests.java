@@ -25,8 +25,8 @@ public class LoginUserTests {
 	private LoginSteps login;
 	private FindTDMData tdmData = new FindTDMData();
 	private String user;
-	private String use= "DigitalBank"; ;
-	private String get = "username";;
+	private String use= "DigitalBankST"; 
+	private String get = "username";
 	private String from = "Login";
 	private String where ;
 	ClassPathResource resource = new ClassPathResource("application.properties");
